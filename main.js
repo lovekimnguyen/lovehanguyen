@@ -1,1 +1,3 @@
-alert("cc");
+alert("Hà Nguyên");
+alert("Yêu");
+alert("Kim Nguyên");
