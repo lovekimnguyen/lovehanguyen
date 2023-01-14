@@ -1,0 +1,58 @@
+p {
+    color : red ;
+    font-size: 20px;
+}
+h1 {
+    color: var(--text-color);
+}
+#first {
+    color:aqua;
+}
+.object {
+    color: aqua;
+}
+:root {
+    --text-color : green ;
+}
+.image {
+    max-width: 100px;
+    height: auto;
+}
+.boxx {
+    max-width: 70%;
+    height: auto ;
+    padding: 200px;
+    border: 10px dashed gold;
+    background-clip: padding-box;
+    background-image: url(https://scontent.fdad3-4.fna.fbcdn.net/v/t1.15752-9/321927056_908773433461935_2670610781920492568_n.png?_nc_cat=105&ccb=1-7&_nc_sid=ae9488&_nc_ohc=3IFykm0kkzoAX9Ln2FS&_nc_ht=scontent.fdad3-4.fna&oh=03_AdRIwh29bKxaa3CuJirnnfLBiOg6SPiilk9_AGBKkgb2jA&oe=63E9E46E);
+}
+.box {
+    width: 200px;
+    height: 200px;
+    color:#fff;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: dashed green;
+    background-clip: padding-box;
+}
+.box1 {
+    background-color: blue;  
+    font-size: 50px;
+    padding: 10px 10px 10px 10px;
+    border: 10px solid #333;
+}
+.box2 {
+    background-color: brown;
+    font-size: 50px;
+}
+.header {
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px dashed red;
+    background-clip: content-box;
+}

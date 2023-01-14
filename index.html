@@ -4,15 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Project of Ha Nguyen</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="boxx">
+    <a style="color :red" href="https://www.facebook.com/profile.php?id=100021790969927">Tới facebook kim nguyên</a>
+    <ul>
+        <li>Tạo instance chứa ngày giờ tại thời điểm hiện tại bằng hàm New date</li>
+        <li>Tạo instance chứa ngày giờ từ một giá trị thời gian</li>
+        <li>Tạo instance chứa ngày giờ từ một chuỗi thời gian</li>
+        <li>Tạo instance chứa ngày giờ từ các thành phần tgian</li>
+    </ul>
+    <table>
+        <thead>
+            <th>STT</th>
+            <th>Tên</th>
+            <th>   Năm sinh</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Hà Văn Nguyên</td>
+                <td>   2004</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td id="first" >Trần Thị Kim Nguyên</td>
+                <td>  2004</td>
+            </tr>
+        </tbody>
+    </table>
+    <p> Text </p>
+    <input type="text">
+    <p> Check box </p>
+    <input type="checkbox">
+    <input type="checkbox">
+    <input type="checkbox">
+    <p> Radio</p>
+    <input name="gioitinh" type="radio">
+    <input name="gioitinh" type="radio">
+    <input name="gioitinh" type="radio">
+    <p></p>
+    <button tpye="button" onclick="on()"> Button </button>
+    <h1>
+    <a title="Đây là bài học về attribute" href="https://www.youtube.com/watch?v=UYpIh5pIkSA&list=PL_-VfJajZj0U9nEXa4qyfB4U5ZIYCMPlz&index=8">Attribute</a>
+    </h1>
+    <div style="color: white;" class="box box1"> BOX1 </div>
+    <div style="color: white;" class="box box2"> BOX2 </div> 
+    <br>
+    <div class="header"></div>
     <h1>
     <label> Từ : 
         <select id="hour">
-            <option value="">Chọn giờ</option>
-            <option value="1">1 giờ</option>
-            <option value="2">2 giờ</option>
+            <option class="object"  style="color: aquamarine;" value="">Chọn giờ</option>
+            <option class="object" value="1">1 giờ</option>
+            <option class="object" value="2">2 giờ</option>
             <option value="3">3 giờ</option>
             <option value="4">4 giờ</option>
             <option value="5">5 giờ</option>
@@ -159,7 +206,7 @@
             <option value="18">Ngày 18 </option>
             <option value="19">Ngày 19 </option>
             <option value="20">Ngày 20 </option>
-            <option value="21">Ngày 21 </option>
+            <option value="21">Ngày 21 </option>    
             <option value="22">Ngày 22 </option>
             <option value="23">Ngày 23 </option>
             <option value="24">Ngày 24 </option>
@@ -250,17 +297,29 @@
         let time = get_day_of_time(day_start , day_end);
         alert(time);
         }
+        function on (){
+            alert("Button");
+        }
     const get_day_of_time = (d1, d2) => {
     let ms1 = d1.getTime();
     let ms2 = d2.getTime();
     return Math.ceil((ms2 - ms1) / (24*60*60*1000));
 };
+    function search(){
+        alert("Không biết");
+    }
     </script>
     <script src="./main.js"></script>
-    <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png" />
+    <img title="Google" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png" />
+    <br>
+    <input type="text" id="search" title="Tìm kiếm bằng google">
+    <button type="button" onclick="search()">Search</button>
+    <p>Tìm kiếm bằng google</p>
+
     <h1> Hà Nguyên Yêu Kim Nguyên </h1>
-    <img src="https://scontent.fdad3-3.fna.fbcdn.net/v/t1.15752-9/324989601_1384025659010780_1129237419958889451_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=ae9488&_nc_ohc=cfSnZt5rt5MAX-puoQj&_nc_ht=scontent.fdad3-3.fna&oh=03_AdSmKVXV9Lu8q5tAPVrX6-HBI1OXSp4AHZkFE9jxDZuTXA&oe=63E8D274" />
-    <p></p>
-    <img src="https://scontent.fdad3-4.fna.fbcdn.net/v/t1.15752-9/320402151_553362050027777_6603742915805701124_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=ae9488&_nc_ohc=eoTLF5SCmz4AX8JghM0&tn=rYZHhG_HPOIw6vOf&_nc_ht=scontent.fdad3-4.fna&oh=03_AdSSFYtEbnstkP3VQVPuuhJAFlM5NF8fnxbmVuJ-ID3Myw&oe=63E8F516" />
+    <img class="image" title="Đây là kim nguyên" src="https://scontent.fdad3-3.fna.fbcdn.net/v/t1.15752-9/324989601_1384025659010780_1129237419958889451_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=ae9488&_nc_ohc=cfSnZt5rt5MAX-puoQj&_nc_ht=scontent.fdad3-3.fna&oh=03_AdSmKVXV9Lu8q5tAPVrX6-HBI1OXSp4AHZkFE9jxDZuTXA&oe=63E8D274" />
+    <img class="image" title="Đây cũng là kim nguyên" src="https://scontent.fdad3-4.fna.fbcdn.net/v/t1.15752-9/320402151_553362050027777_6603742915805701124_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=ae9488&_nc_ohc=eoTLF5SCmz4AX8JghM0&tn=rYZHhG_HPOIw6vOf&_nc_ht=scontent.fdad3-4.fna&oh=03_AdSSFYtEbnstkP3VQVPuuhJAFlM5NF8fnxbmVuJ-ID3Myw&oe=63E8F516" />
+    
+    </div>
 </body>
 </html>
