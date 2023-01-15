@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="boxx">
+    <div class="boxx" style="overflow-x:auto;">
+        <a href="https://www.w3schools.com/css/css_table_responsive.asp"> Bảng đáp ứng</a><br>
     <a style="color :red" href="https://www.facebook.com/profile.php?id=100021790969927">Tới facebook kim nguyên</a>
     <ul>
         <li>Tạo instance chứa ngày giờ tại thời điểm hiện tại bằng hàm New date</li>
@@ -16,6 +17,13 @@
         <li>Tạo instance chứa ngày giờ từ một chuỗi thời gian</li>
         <li>Tạo instance chứa ngày giờ từ các thành phần tgian</li>
     </ul>
+    <form action="">
+        Tên                     : <input required type="text" value="Hà"><br>
+        Họ                      : <input required type="text" value="Nguyên"><br>
+        Ny                      : <input type="text" disabled="disabled" value="Kim Nguyên"><br>
+        Nơi sinh (bắt buộc)     : <input required type="text" value="Quảng Trị"><br>
+        Mô tả (không bắt buộc)  : <input type="text" >
+      </form>
     <table>
         <thead>
             <th>STT</th>
@@ -31,6 +39,11 @@
             <tr>
                 <td>2</td>
                 <td id="first" >Trần Thị Kim Nguyên</td>
+                <td>  2004</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td >Phạm Nhật Băng</td>
                 <td>  2004</td>
             </tr>
         </tbody>
@@ -54,6 +67,9 @@
     <div style="color: white;" class="box box2"> BOX2 </div> 
     <br>
     <div class="header"></div>
+    <br>
+    <a id="attr" href="https://www.youtube.com/watch?v=LZfoRgIYw2s&list=PL_-VfJajZj0U9nEXa4qyfB4U5ZIYCMPlz&index=24"> function attr trong css  </a>
+    
     <h1>
     <label> Từ : 
         <select id="hour">
