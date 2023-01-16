@@ -162,7 +162,7 @@ li::selection {
     height: 200px;
     width: 200px;
     position: absolute;
-    top: 20px;
+    bottom: 20px;
     left: 50px;
     position: fixed;
     color: red;
@@ -178,4 +178,73 @@ li::selection {
 #header {
     font-size: 30px;
     text-align: center;
+}
+#ticky {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 20px;
+    margin-top: 40px;
+    background-color: #f2f2f2;
+    left: 0;
+    right: 0;
+    height: 30px;
+}
+.boxx1 {
+    min-height: 42px;
+    background-color: rgb(163, 64, 28);
+    display: flex;
+    justify-content: space-between;
+}
+.box1_list {
+    padding-left: 0;
+    margin: auto 16px;
+}
+.istem {
+    color: #fff;
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+}
+.boxx2 {
+    width: 100%;
+    height: 180px;
+    padding: 20px ;
+    background-color: #f2f2f2;
+    background-clip: content-box;
+    border: 20px dashed white ;
+    box-sizing: border-box;
+    margin: 36px auto 0 auto;
+}
+.form__label {
+    padding: 12px 0;
+    display : flex;
+}
+.form__label1 {
+    min-width: 120px;
+}
+.form__label2 {
+    flex: 1;
+}
+.none {
+    list-style: none;
+}
+.boxx3 {
+    max-width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    margin-top: 20px;
+    padding: 12px;
+}
+.boxx31 {
+    padding: 0 16px;
+}
+.one {
+    flex: 1;
+}
+.two {
+    flex: 1;
+}
+.main {
+    flex: 3;
 }
