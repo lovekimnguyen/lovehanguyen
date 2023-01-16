@@ -9,7 +9,19 @@
 </head>
 <body>
     <div class="boxx" style="overflow-x:auto;">
-        <a href="https://www.w3schools.com/css/css_table_responsive.asp"> Bảng đáp ứng</a><br>
+        <div id="isNot">
+        <button type="button" onclick="fixed()"> Fixed </button>
+        <p id="demo" ></p><a id="link" href="https://www.youtube.com/watch?v=jAm8wm77aTM&list=PL_-VfJajZj0U9nEXa4qyfB4U5ZIYCMPlz&index=29"></a><p id="after_link"></p>
+        </div>
+        <a href="https://www.w3schools.com/css/css_table_responsive.asp"> Bảng đáp ứng</a>
+        <div class="father">
+            <a style="text-align: center; color:rgba(178, 17, 36, 0.53) ;" id="header" href="https://www.youtube.com/watch?v=jAm8wm77aTM&list=PL_-VfJajZj0U9nEXa4qyfB4U5ZIYCMPlz&index=29"> Cách tạo header  </a>
+            <ul>
+                <li>Các mẫu Background và hình nền này đều được cập nhật những xu hướng thiết kế mới nhất hiện nay như: mờ, trừu tượng, góc cạnh.</li>
+                <li>Chắc chắn, danh sách 20+ Background đẹp nhất cho website của chúng tôi sẽ không làm bạn phải thất vọng.</li>
+                <li>Cùng Tất Thành khám phá nào, Let's go!</li>
+            </ul>
+            </div>
     <a style="color :red" href="https://www.facebook.com/profile.php?id=100021790969927">Tới facebook kim nguyên</a>
     <ul>
         <li>Tạo instance chứa ngày giờ tại thời điểm hiện tại bằng hàm New date</li>
@@ -17,6 +29,7 @@
         <li>Tạo instance chứa ngày giờ từ một chuỗi thời gian</li>
         <li>Tạo instance chứa ngày giờ từ các thành phần tgian</li>
     </ul>
+    <p id="change color" onclick="red()" style="color: aqua; font-size: 25px;"> ## Bấm vào đây sẽ có bất ngờ </p>
     <form action="">
         Tên                     : <input required type="text" value="Hà"><br>
         Họ                      : <input required type="text" value="Nguyên"><br>
@@ -323,6 +336,15 @@
 };
     function search(){
         alert("Không biết");
+    }
+    function fixed(){
+        document.getElementById("demo").innerHTML = "Bấm";
+        document.getElementById("link").innerHTML = " vào đây";
+        document.getElementById("after_link").innerHTML ="để xem cách làm ";
+    }
+    function red(){
+        document.getElementById("change color").style.color = "red";
+        document.getElementById("change color").style.fontSize = "40px";
     }
     </script>
     <script src="./main.js"></script>
