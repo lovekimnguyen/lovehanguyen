@@ -6,8 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project of Ha Nguyen</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./main.js"></script>
 </head>
 <body>
+    <div class="video-play">
+        <video playsinline autoplay muted loop id="video">
+            <source src="https://res.cloudinary.com/dkdg4o9og/video/upload/v1673970138/X2Convert.com_background_video_love_trai_tim_1455742621004854917_yzqbsv.mp4" type="video/mp4">
+          </video>
+    </div>
+    <div class="title-content">
+        <h2 id="cho-doi"> Chờ Đợi Có Đáng Sợ</h2>
+    </div>
+    <div class="noidung">
+    <div class="noidung1">
+        <p class="loi_hat">Khi hoàng hôn hắt hiu từng vệt mong manh</p>
+        <p class="loi_hat">Khi dòng xe nối đuôi nhau trôi qua thật nhanh</p>
+        <p class="loi_hat">Khi bàn tay vốn thân *** chẳng còn nơi đây</p>
+        <p class="loi_hat">Là lúc nỗi nhớ ùa về</p>
+        <p class="loi_hat">Khi tình yêu bỗng nhiên chẳng con dành cho anh</p>
+        <p class="loi_hat">Khi lời hứa với em sao quên thật nhanh</p>
+        <p class="loi_hat">Khi nụ hôn đánh rơi từng nhịp yêu thương</p>
+        <p class="loi_hat">Là lúc kết thúc thật rồi kỉ niệm có nhau một thời</p>
+        <p class="loi_hat">Là lúc anh phải đoán xem từng ngày không em, rồi sẽ ra sao?</p>
+        <p class="loi_hat">Đôi khi nhầm một chuyến xe, lại đưa chúng ta về nơi muốn đến<br><br>
+            Nhưng em lại chẳng muốn quay về, về nơi chúng ta dừng lại<br><br>
+    </div>
+    <div class="noidung1">
+        <p class="loi_hat">
+            Anh gom từng vệt nắng cuối trời để thắp sáng hy vọng em sẽ trở về<br><br>
+            Chờ đợi có đáng sợ chỉ là anh không biết chờ đến bao giờ?<br><br>
+            Khi hoàng hôn bỗng nhiên chẳng dành cho anh<br><br>
+            Khi tình yêu bỗng nhiên trôi qua thật nhanh<br><br>
+            Khi nụ hôn đánh rơi từng nhịp yêu thương<br><br>
+            Là lúc kết thúc thật rồi kỉ niệm có nhau một thời<br><br>
+            Là lúc anh phải đoán xem từng ngày không em, rồi sẽ ra sao?<br><br>
+            Đôi khi nhầm một chuyến xe, lại đưa chúng ta về nơi muốn đến<br><br>
+            Nhưng em lại chẳng muốn quay về, về nơi chúng ta dừng lại<br><br>
+            Anh gom từng vệt nắng cuối trời để thắp sáng hy vọng em sẽ trở về<br><br>
+            Chờ đợi có đáng sợ chỉ là anh không biết chờ đến bao giờ?<br><br>
+        </p>
+    </div>
+    </div>
+    <div>
+        <a id="chen-video" href="https://console.cloudinary.com/console/c-e8eae13d033926ec3ab97ec7fd6cb0/media_library/recent_uploads"> Tải lên đây để chèn video vào website </a><br>
+        <button id="myBtn" onclick="myBtns()">Dừng </button><br>
+    </div>
+    <div class="line"></div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6VO9XdZYpnA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/pVXBrHb3A4M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/G19jZzK5FWI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/CFBgInOVnjU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     <div class="boxx1">
         <ul class="box1_list">
             <li class="istem">Home</li>
@@ -173,7 +221,6 @@
     <div class="header"></div>
     <br>
     <a id="attr" href="https://www.youtube.com/watch?v=LZfoRgIYw2s&list=PL_-VfJajZj0U9nEXa4qyfB4U5ZIYCMPlz&index=24"> function attr trong css  </a>
-    
     <h1>
     <label> Từ : 
         <select id="hour">
@@ -382,73 +429,14 @@
     </h1>
     <button type="button" onclick="day()">Enter</button>
     <h6> Nhập theo định dạng : Năm - Tháng - Ngày</h6>
-    <script>
-        function day (){
-        let A = document.getElementById('hour').value;
-        let B = document.getElementById('day').value;
-        let C = document.getElementById('month').value;
-        let D = document.getElementById('year').value;
-        let E = document.getElementById('hour1').value;
-        let F = document.getElementById('day1').value;
-        let G = document.getElementById('month1').value;
-        let H = document.getElementById('year1').value;
-        let gio = document.getElementById('hour');
-        let hour = gio.options[gio.selectedIndex].text;
-        let ngay = document.getElementById('day');
-        let dayz = ngay.options[ngay.selectedIndex].text;
-        let thang = document.getElementById('month');
-        let month = thang.options[thang.selectedIndex].text;
-        let nam = document.getElementById('year');
-        let year = nam.options[nam.selectedIndex].text;
-        let gio1 = document.getElementById('hour1');
-        let hour1 = gio1.options[gio1.selectedIndex].text;
-        let ngay1 = document.getElementById('day1');
-        let day1 = ngay1.options[ngay1.selectedIndex].text;
-        let thang1 = document.getElementById('month1');
-        let month1 = thang1.options[thang1.selectedIndex].text;
-        let nam1 = document.getElementById('year1');
-        let year1 = nam1.options[nam1.selectedIndex].text;
-        let a = D + '- ' + C + '- ' + B ;
-        let b = H + '-' + G + '-' + F ;
-        console.log(typeof a);
-        console.log(typeof b);
-        let day_start = new Date(a);
-        let day_end = new Date(b);
-        let time = get_day_of_time(day_start , day_end);
-        alert(time);
-        }
-        function on (){
-            alert("Button");
-        }
-    const get_day_of_time = (d1, d2) => {
-    let ms1 = d1.getTime();
-    let ms2 = d2.getTime();
-    return Math.ceil((ms2 - ms1) / (24*60*60*1000));
-};
-    function search(){
-        alert("Không biết");
-    }
-    function fixed(){
-        document.getElementById("demo").innerHTML = "Bấm";
-        document.getElementById("link").innerHTML = " vào đây";
-        document.getElementById("after_link").innerHTML ="để xem cách làm ";
-    }
-    function red(){
-        document.getElementById("change color").style.color = "red";
-        document.getElementById("change color").style.fontSize = "40px";
-    }
-    </script>
-    <script src="./main.js"></script>
     <img title="Google" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png" />
     <br>
     <input type="text" id="search" title="Tìm kiếm bằng google">
     <button type="button" onclick="search()">Search</button>
     <p>Tìm kiếm bằng google</p>
-
     <h1> Hà Nguyên Yêu Kim Nguyên </h1>
     <img class="image" title="Đây là kim nguyên" src="https://scontent.fdad3-3.fna.fbcdn.net/v/t1.15752-9/324989601_1384025659010780_1129237419958889451_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=ae9488&_nc_ohc=cfSnZt5rt5MAX-puoQj&_nc_ht=scontent.fdad3-3.fna&oh=03_AdSmKVXV9Lu8q5tAPVrX6-HBI1OXSp4AHZkFE9jxDZuTXA&oe=63E8D274" />
     <img class="image" title="Đây cũng là kim nguyên" src="https://scontent.fdad3-4.fna.fbcdn.net/v/t1.15752-9/320402151_553362050027777_6603742915805701124_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=ae9488&_nc_ohc=eoTLF5SCmz4AX8JghM0&tn=rYZHhG_HPOIw6vOf&_nc_ht=scontent.fdad3-4.fna&oh=03_AdSSFYtEbnstkP3VQVPuuhJAFlM5NF8fnxbmVuJ-ID3Myw&oe=63E8F516" />
-    
     </div>
 </body>
 </html>

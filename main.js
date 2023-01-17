@@ -1,1 +1,66 @@
 alert("Xin chào");
+function myBtns() {
+  var video = document.getElementById("video");
+  var nut = document.getElementById("myBtn");
+  if (video.paused) {
+    video.play();
+    nut.innerHTML = "Dừng";
+  } else {
+    video.pause();
+    nut.innerHTML = "Phát";
+  }
+}
+function day (){
+let A = document.getElementById('hour').value;
+let B = document.getElementById('day').value;
+let C = document.getElementById('month').value;
+let D = document.getElementById('year').value;
+let E = document.getElementById('hour1').value;
+let F = document.getElementById('day1').value;
+let G = document.getElementById('month1').value;
+let H = document.getElementById('year1').value;
+let gio = document.getElementById('hour');
+let hour = gio.options[gio.selectedIndex].text;
+let ngay = document.getElementById('day');
+let dayz = ngay.options[ngay.selectedIndex].text;
+let thang = document.getElementById('month');
+let month = thang.options[thang.selectedIndex].text;
+let nam = document.getElementById('year');
+let year = nam.options[nam.selectedIndex].text;
+let gio1 = document.getElementById('hour1');
+let hour1 = gio1.options[gio1.selectedIndex].text;
+let ngay1 = document.getElementById('day1');
+let day1 = ngay1.options[ngay1.selectedIndex].text;
+let thang1 = document.getElementById('month1');
+let month1 = thang1.options[thang1.selectedIndex].text;
+let nam1 = document.getElementById('year1');
+let year1 = nam1.options[nam1.selectedIndex].text;
+let a = D + '- ' + C + '- ' + B ;
+let b = H + '-' + G + '-' + F ;
+    console.log(typeof a);
+    console.log(typeof b);
+    let day_start = new Date(a);
+    let day_end = new Date(b);
+    let time = get_day_of_time(day_start , day_end);
+     alert(time);
+     }
+    function on (){
+         alert("Button");
+    }
+    const get_day_of_time = (d1, d2) => {
+    let ms1 = d1.getTime();
+    let ms2 = d2.getTime();
+    return Math.ceil((ms2 - ms1) / (24*60*60*1000));
+    };
+    function search(){
+        alert("Không biết");
+    }
+    function fixed(){
+        document.getElementById("demo").innerHTML = "Bấm";
+        document.getElementById("link").innerHTML = " vào đây";
+        document.getElementById("after_link").innerHTML ="để xem cách làm ";
+    }
+    function red(){
+        document.getElementById("change color").style.color = "red";
+        document.getElementById("change color").style.fontSize = "40px";
+    }
