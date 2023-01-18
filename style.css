@@ -164,7 +164,7 @@ li::selection {
     height: auto;
     position: absolute;
     bottom: 0px;
-    left: 50px;
+    left: 0px;
     position: fixed;
     color: red;
 }
@@ -444,7 +444,7 @@ li::selection {
 .fixed-video {
     position: fixed;
     bottom: 0;
-    right: 20px;
+    right: 0;
 }
 #video-fixed {
     max-width: 200px;

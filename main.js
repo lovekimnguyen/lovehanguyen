@@ -2,14 +2,18 @@ alert("Xin chào");
 function myBtns() {
   var video = document.getElementById("video");
   var nut = document.getElementById("myBtn");
+  var video1 = document.getElementById("video-fixed");
   if (video.paused) {
+    video1.play();
     video.play();
     nut.innerHTML = "Dừng";
   } else {
     video.pause();
+    video1.pause();
     nut.innerHTML = "Phát";
   }
 }
+var a = 1;
 function day (){
 let A = document.getElementById('hour').value;
 let B = document.getElementById('day').value;
@@ -64,9 +68,18 @@ let b = H + '-' + G + '-' + F ;
         alert("Không biết");
     }
     function fixed(){
+      if(a == 1){
         document.getElementById("demo").innerHTML = "Bấm";
         document.getElementById("link").innerHTML = " vào đây";
         document.getElementById("after_link").innerHTML ="để xem cách làm ";
+        a = 0;
+      }
+      else {
+        document.getElementById("demo").innerHTML = "";
+        document.getElementById("link").innerHTML = "";
+        document.getElementById("after_link").innerHTML ="";
+        a = 1;
+      }
     }
     function red(){
         document.getElementById("change color").style.color = "red";
