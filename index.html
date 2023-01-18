@@ -9,6 +9,11 @@
     <script src="./main.js"></script>
 </head>
 <body>
+    <div class="fixed-video">
+        <video playsinline autoplay loop id="video-fixed">
+            <source src="https://res.cloudinary.com/dkdg4o9og/video/upload/v1674028451/X2Convert.com_nhac_xuan_khong_loi_2023_va_background_tet_quy_mao_chuc_mung_nam_moi_music_lunar_new_year_2023_3222655644976148548_zzv2wf.mp4" type="video/mp4">
+        </video>
+    </div>
     <div class="video-play">
         <video playsinline autoplay muted loop id="video">
             <source src="https://res.cloudinary.com/dkdg4o9og/video/upload/v1673970138/X2Convert.com_background_video_love_trai_tim_1455742621004854917_yzqbsv.mp4" type="video/mp4">
@@ -47,7 +52,7 @@
         </p>
     </div>
     </div>
-    <div>
+    <div id="zzz">
         <a id="chen-video" href="https://console.cloudinary.com/console/c-e8eae13d033926ec3ab97ec7fd6cb0/media_library/recent_uploads"> Tải lên đây để chèn video vào website </a><br>
         <button id="myBtn" onclick="myBtns()">Dừng </button><br>
     </div>
@@ -221,10 +226,10 @@
     <div class="header"></div>
     <br>
     <a id="attr" href="https://www.youtube.com/watch?v=LZfoRgIYw2s&list=PL_-VfJajZj0U9nEXa4qyfB4U5ZIYCMPlz&index=24"> function attr trong css  </a>
-    <h1>
+    <h2>
     <label> Từ : 
         <select id="hour">
-            <option class="object"  style="color: aquamarine;" value="">Chọn giờ</option>
+            <option class="object"  style="color: aquamarine;" value="0">Chọn giờ</option>
             <option class="object" value="1">1 giờ</option>
             <option class="object" value="2">2 giờ</option>
             <option value="3">3 giờ</option>
@@ -250,7 +255,7 @@
             <option value="23">23 giờ</option>
             </select>
             <select id="day">
-                <option value="">Chọn ngày</option>
+                <option value="0">Chọn ngày</option>
             <option value="1"> Ngày 1 </option>
             <option value="2">Ngày 2 </option>
             <option value="3">Ngày 3 </option>
@@ -284,7 +289,7 @@
             <option value="31">Ngày 31 </option>
             </select>
             <select id="month">
-                <option value="">Chọn tháng</option>
+                <option value="0">Chọn tháng</option>
             <option value="1">Tháng 1 </option>
             <option value="2">Tháng 2 </option>
             <option value="3">Tháng 3 </option>
@@ -299,7 +304,7 @@
             <option value="12">Tháng 12 </option>
             </select>
             <select id="year">
-                <option value="">Chọn năm</option>
+                <option value="0">Chọn năm</option>
             <option value="2023">2023 </option>
             <option value="2022">2022</option>
             <option value="2021">2021</option>
@@ -322,11 +327,11 @@
             <option value="2004">2004 </option>
             </select>
     </label>
-    </h1>
-    <h1>
+    </h2>
+    <h2>
     <label> Đến : 
         <select id="hour1">
-            <option value="">Chọn giờ</option>
+            <option value="0">Chọn giờ</option>
             <option value="1">1 giờ</option>
             <option value="2">2 giờ</option>
             <option value="3">3 giờ</option>
@@ -352,7 +357,7 @@
             <option value="23">23 giờ</option>
             </select>
             <select id="day1">
-                <option value="">Chọn ngày</option>
+                <option value="0">Chọn ngày</option>
             <option value="1"> Ngày 1 </option>
             <option value="2">Ngày 2 </option>
             <option value="3">Ngày 3 </option>
@@ -386,7 +391,7 @@
             <option value="31">Ngày 31 </option>
             </select>
             <select id="month1">
-                <option value="">Chọn tháng</option>
+                <option value="0">Chọn tháng</option>
             <option value="1">Tháng 1 </option>
             <option value="2">Tháng 2 </option>
             <option value="3">Tháng 3 </option>
@@ -401,7 +406,7 @@
             <option value="12">Tháng 12 </option>
             </select>
             <select id="year1">
-                <option value="">Chọn năm</option>
+                <option value="0">Chọn năm</option>
             <option value="2023">2023 </option>
             <option value="2022">2022</option>
             <option value="2021">2021</option>
@@ -422,13 +427,38 @@
             <option value="2006">2006 </option>
             <option value="2005">2005 </option>
             <option value="2004">2004 </option>
-            <option value=”2”>Lựa chọn 2</option>
-            <option value=”3”>Lựa chọn 3</option>
             </select>
     </label>
-    </h1>
-    <button type="button" onclick="day()">Enter</button>
+    </h2>
+    <button type="button"  id="dayss" onclick="day()">Xem ngay</button>
     <h6> Nhập theo định dạng : Năm - Tháng - Ngày</h6>
+    <table>
+        <thead>
+            <th>.....</th>
+            <th class="title-table"> Ngày </th>
+            <th class="title-table"> Tháng</th>
+            <th class="title-table"> Năm</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="font-size:20px;"> Từ </td>
+                <td id="tu1"></td>
+                <td id="tu2"></td>
+                <td id="tu3"></td>
+            </tr>
+            <tr>
+                <td style="font-size:20px;"> Đến</td>
+                <td id="den1"></td>
+                <td id="den2"></td>
+                <td id="den3"></td>
+            </tr>
+            <tr>
+                <td style="font-size:20px;"> Kết quả </td>
+                <td colspan="3" id="result-table"></td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br><br>
     <img title="Google" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png" />
     <br>
     <input type="text" id="search" title="Tìm kiếm bằng google">

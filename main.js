@@ -42,7 +42,15 @@ let b = H + '-' + G + '-' + F ;
     let day_start = new Date(a);
     let day_end = new Date(b);
     let time = get_day_of_time(day_start , day_end);
-     alert(time);
+    if(time != null){
+     document.getElementById("tu1").innerHTML = dayz;
+     document.getElementById("tu2").innerHTML = month;
+     document.getElementById("tu3").innerHTML = year ;
+     document.getElementById("den1").innerHTML = day1 ;
+     document.getElementById("den2").innerHTML = month1;
+     document.getElementById("den3").innerHTML = year1 ;
+     document.getElementById("result-table").innerHTML = time + ' ngày' ;
+    }
      }
     function on (){
          alert("Button");

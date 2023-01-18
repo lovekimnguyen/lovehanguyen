@@ -84,6 +84,7 @@ table, th, td {
   }
 table {
     width: 80%;
+    background-color: white;
 }
 th {
     height: 50px;
@@ -352,12 +353,12 @@ li::selection {
     padding: 20px;
     height: 100vh;
     display: flex;
+    justify-content: space-around;
 }
 .noidung1 {
     flex: 1;
+    padding-top: 100px;
     padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 90px;
 }
 #video {
     width: 100vw;
@@ -387,4 +388,69 @@ li::selection {
     left: 350px;
     color: red;
     font-size: 30px;
+}
+.title-table {
+    font-size: 20px;
+}
+#dayss {
+    width: 150px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+#hour {
+    width: 120px;
+    font-size: 15px;
+    padding: 10px;
+}
+#day {
+    width: 120px;
+    font-size: 15px;
+    padding: 10px;
+}
+#month {
+    width: 120px;
+    font-size: 15px;
+    padding: 10px;
+}
+#year {
+    width: 120px;
+    font-size: 15px;
+    padding: 10px ;
+}
+#hour1 {
+    width: 120px;
+    font-size: 15px;
+    padding: 10px;
+}
+#day1 {
+    width: 120px;
+    font-size: 15px;
+    padding: 10px;
+}
+#month1 {
+    width: 120px;
+    font-size: 15px;
+    padding: 10px;
+}
+#year1 {
+    width: 120px;
+    font-size: 15px;
+    padding: 10px;
+}
+.fixed-video {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+}
+#video-fixed {
+    max-width: 200px;
+}
+#zzz {
+    position: absolute;
+    padding-bottom: 50px;
+    left: 400px;
 }
