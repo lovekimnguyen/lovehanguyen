@@ -266,6 +266,12 @@ li::selection {
     box-sizing: border-box;
     color: #f7f8f6;
     display: flex;
+    flex-direction: column;
+}
+@media (min-width : 700px) {
+    .boxx4 {
+        flex-direction: row;
+    }
 }
 .one4 {
     background-color: rgb(60, 142, 142);
@@ -337,6 +343,17 @@ li::selection {
     text-align: center;
     height: var(--percent);
     background-color: red;
+    animation: animation ease-in-out 0.7s;
+}
+@keyframes animation { 
+    from {
+        opacity: 0.5;
+        height: calc(var(--percent) - 50%);
+    }
+    to {
+        opacity: 1;
+        height: var(--percent);
+    }
 }
 .video-play {
     max-width: 100%;

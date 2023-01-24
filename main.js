@@ -1,4 +1,3 @@
-alert("Xin chào");
 function myBtns() {
   var video = document.getElementById("video");
   var nut = document.getElementById("myBtn");
